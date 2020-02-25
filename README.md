@@ -20,6 +20,7 @@ for routing management.
 1- Clone the repository.<br />
 2- In the project directory run:
 
+##### `yarn install`
 ##### `yarn start`
 
 Now the app is running in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
