@@ -42,7 +42,6 @@ const PrivateLayout = ({children}) => {
                         <Header>
                             <Toolbar>
                                 <SidebarTrigger sidebarId="primarySidebar" />
-                                {/*<HeaderMockUp />*/}
                                 <PrivateHeader/>
                             </Toolbar>
                         </Header>

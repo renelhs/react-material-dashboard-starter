@@ -17,7 +17,7 @@ function LoginPage() {
     return (
         <div className="Login">
             <header className="Login-header">
-                This is the Login Page <br/><br/>
+                Login Page <br/><br/>
                 <Button color="inherit" variant="outlined" onClick={handleClick}>
                     Login
                 </Button>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useMemo, forwardRef } from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 
 import List from '@material-ui/core/List';
@@ -27,9 +27,9 @@ const PrivateNavContent = () => {
     const ListItemLink = props => {
         const { icon, primary, to } = props;
 
-        const renderLink = React.useMemo(
+        const renderLink = useMemo(
             () =>
-                React.forwardRef((linkProps, ref) => (
+                forwardRef((linkProps, ref) => (
                     <Link ref={ref} to={to} {...linkProps} />
                 )),
             [to],
@@ -41,7 +41,7 @@ const PrivateNavContent = () => {
                 component={renderLink}
                 selected={path.includes(to)}>
                 {icon ? <ListItemIcon>{icon}</ListItemIcon> : null}
-                <ListItemText primary={primary} />
+                <ListItemText primary={primary}/>
             </ListItem>
         );
     };

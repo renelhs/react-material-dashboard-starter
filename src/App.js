@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import LoginPage from "./pages/auth/Login";
 import PrivateLayout from "./layouts/PrivateLayout";
